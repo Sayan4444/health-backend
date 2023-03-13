@@ -15,4 +15,5 @@ const appointmentRouter = require('./routes/appointment');
 app.use('/', appointmentRouter);
 
 const PORT = process.env.PORT;
-const server = app.listen(PORT, () => console.log('Server running'.blue.bold));
+// const server = app.listen(PORT, () => console.log('Server running'.blue.bold));
+app.listen();

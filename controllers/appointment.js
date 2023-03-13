@@ -1,7 +1,7 @@
 const Appointment = require('../model/Appointment');
 
 exports.addData = async (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
     try {
         await Appointment.create(req.body);
         res.status(200).json({
